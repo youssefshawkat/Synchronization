@@ -14,18 +14,18 @@ public class Network {
 
 
 
-        int Max = Integer.parseInt(JOptionPane.showInputDialog( "Please Enter The Max Number of Connections: "));
-        Router r = new Router(Max,4);
+            int Max = Integer.parseInt(JOptionPane.showInputDialog( "Please Enter The Max Number of Connections: "));
+            Router r = new Router(Max);
 
-        int D = Integer.parseInt(JOptionPane.showInputDialog("Please Enter The Number of Devices "));
+            int D = Integer.parseInt(JOptionPane.showInputDialog("Please Enter The Number of Devices "));
 
-        Device [] myDevices = new Device[D];
+            Device [] myDevices = new Device[D];
 
-        String name,type;
+            String name,type;
 
 
 
-        for(int i = 0 ; i < D ;i++) {
+            for(int i = 0 ; i < D ;i++) {
 
 
                 name = JOptionPane.showInputDialog("Enter the Name of Device No. " + (i + 1));
@@ -41,16 +41,14 @@ public class Network {
 
                 myDevices[i] = new Device(name, type, r);
 
-        }
+            }
 
             new GUI();
 
-        for(int i = 0 ; i < D ;i++){
+            for(int i = 0 ; i < D ;i++){
 
-            myDevices[i].start();
-        }
-
-
+                myDevices[i].start();
+            }
 
 
 
@@ -59,10 +57,12 @@ public class Network {
 
 
 
-    } catch (NumberFormatException  | NullPointerException error) {
+
+
+        } catch (NumberFormatException  | NullPointerException error) {
 
             System.exit(0);
-    }
+        }
 
 
     }

@@ -1,20 +1,20 @@
-C2 ANDORID Arrived
 C1 IPHONE Arrived
-Connection 2 : C1 Occupied
-Connection 1 : C2 Occupied
-C3 PS4 Arrived and Waiting
-Connection 1 : C2 login
-Connection 2 : C1 login
-C4 CARPLAY Arrived and Waiting
-Connection 1 :C2 performing online activity
-Connection 2 :C1 performing online activity
-Connection 1 :C2 logout
-Connection 2 :C1 logout
-Connection 1 : C3 Occupied
-Connection 1 : C3 login
-Connection 2 : C4 Occupied
-Connection 2 : C4 login
-Connection 1 :C3 performing online activity
-Connection 2 :C4 performing online activity
-Connection 1 :C3 logout
-Connection 2 :C4 logout
+C2 ANDORID Arrived
+C3 PC Arrived
+Connection 2 : C2 Occupied
+Connection 1 : C1 Occupied
+C4 BMW Arrived and Waiting
+Connection 1 : C1 login
+Connection 2 : C2 login
+Connection 3 : C3 Occupied
+Connection 3 : C3 login
+Connection 1 :C1 performing online activity
+Connection 2 :C2 performing online activity
+Connection 3 :C3 performing online activity
+Connection 1 :C1 logout
+Connection 2 :C2 logout
+Connection 1 : C4 Occupied
+Connection 3 :C3 logout
+Connection 1 : C4 login
+Connection 1 :C4 performing online activity
+Connection 1 :C4 logout

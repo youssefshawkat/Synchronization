@@ -3,13 +3,12 @@ public class  Router {
     private final semaphore connections;
     private static Device [] Devices ;
     private static semaphore devices;
-    private int count;
+    private int count = 0;
     private final int NUM_C;
 
 
-    Router(int c, int d){
+    Router(int c){
         NUM_C = c;
-        count = d;
         connections = new semaphore(c);
         devices = new semaphore(c);
         Devices = new Device[c];
@@ -20,9 +19,8 @@ public class  Router {
 
     public void connect(Device d){
         devices.P();
-        count--;
-
-       if(count < NUM_C){
+        count++;
+       if(count > NUM_C){
 
             d.Setstate("Arrived and Waiting");
 
